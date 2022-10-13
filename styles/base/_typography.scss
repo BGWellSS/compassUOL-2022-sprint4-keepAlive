@@ -4,8 +4,24 @@
 body {
   font-family: $primary-font-family;
   font-size: $core-font-size;
+  font-weight: 400;
 }
 
-// ---- Modules
+// ---- Login page
+// - Presentation
+.login-greeting {
+  font-size: 6rem;
+  line-height: 7.6rem;
+  font-weight: 200;
+}
+.login-text {
+  line-height: 2rem;
+  font-weight: 200;
+}
 
-// ---- Header
+// - Login form
+.login-title {
+  font-size: 3rem;
+  line-height: 3.8rem;
+  font-weight: 200;
+}

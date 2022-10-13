@@ -4,32 +4,48 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <title>Keep Alive - Compass.UOL</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body>
+  <body class="login-page">
     <main class="login-content side-a">
       <div class="container">
         <section class="login-presentation">
           <header class="login-header">
             <h2 class="login-greeting"><strong>Olá,</strong></h2>
-            <p class="login-text">Para continuar navegando de forma segura, efetue o login na rede.</p>
+            <p class="login-text">
+              Para continuar navegando de forma segura, efetue o login na rede.
+            </p>
           </header>
         </section>
         <section>
           <h2 class="login-title">Login</h2>
           <form action="post" class="login-form">
-            <input type="text" placeholder="Usuário" name="user" class="user-input">
-            <input type="password" placeholder="Senha" name="password" class="password-input">
+            <div class="input-container user-container">
+              <input
+                type="text"
+                placeholder="Usuário"
+                name="user"
+                class="user-input"
+              />
+            </div>
+            <div class="input-container password-container">
+              <input
+                type="password"
+                placeholder="Senha"
+                name="password"
+                class="password-input"
+              />
+            </div>
             <button type="submit" class="submit-input">Continuar</button>
           </form>
         </section>
@@ -38,7 +54,11 @@
     <aside class="compass-content side-b">
       <header class="compass-header">
         <figure class="image-container">
-          <img src="./images/theme/Logo-Compasso-Branco.svg" alt="Logo Compass.UOL" class="logo-image">
+          <img
+            src="./images/theme/Logo-Compasso-Branco.svg"
+            alt="Logo Compass.UOL"
+            class="logo-image"
+          />
         </figure>
       </header>
     </aside>

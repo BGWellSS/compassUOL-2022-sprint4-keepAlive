@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+// ---- Form styles
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+  .input-container {
+    position: relative;
+
+    & ~ .input-container {
+      margin-top: 33px;
+    }
+  }
+
+  input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background-color: transparent;
+    border: 1px solid $white;
+    border-radius: 50px;
+    color: $text-color-dark;
+
+    &::placeholder {
+      color: $text-color-dark;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .user-container {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      right: -80px;
+      background: url("./../images/theme/icon-user.svg") no-repeat;
+      background-position-y: 50%;
+    }
+  }
+  .password-container {
+    &::after {
+      content: "";
+      position: absolute;
+      height: 60px;
+      width: 60px;
+      right: -80px;
+      background: url("./../images/theme/icon-password.svg") no-repeat;
+      background-position-y: 50%;
+    }
+  }
+  .submit-input {
+    margin-top: 115px;
+    background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
+    padding: 23px 0;
+    color: $white;
+    box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.15);
+    border: 2px solid #ff2d04;
+    border-radius: 50px;
+  }
+}
