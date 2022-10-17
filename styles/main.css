@@ -406,6 +406,9 @@ body {
   background: url("./../images/theme/icon-user.svg") no-repeat;
   background-position-y: 50%;
 }
+.login-form .user-container.keydown::after {
+  right: -20px;
+}
 .login-form .password-container::after {
   content: "";
   position: absolute;
@@ -415,8 +418,28 @@ body {
   background: url("./../images/theme/icon-password.svg") no-repeat;
   background-position-y: 50%;
 }
+.login-form .password-container.keydown::after {
+  right: -20px;
+}
+.login-form .user-input.invalid,
+.login-form .password-input.invalid {
+  border-color: #E9B425;
+}
+.login-form .message-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin-top: 35px;
+}
+.login-form .message-container .message-text {
+  display: flex;
+  width: 80%;
+  color: #E9B425;
+  text-align: center;
+}
 .login-form .submit-input {
-  margin-top: 115px;
+  margin-top: 35px;
   background: linear-gradient(90deg, #ff2d04 0%, #c13216 100%);
   padding: 23px 0;
   color: #ffffff;
@@ -456,7 +479,7 @@ body {
   margin-bottom: 35px;
 }
 .login-page .compass-content {
-  background: url("./../images/theme/Compasso-notebook.svg") no-repeat;
+  background: url("./../images/theme/compasso_notebook.jpg") no-repeat;
   background-size: cover;
 }
 .login-page .compass-header {
