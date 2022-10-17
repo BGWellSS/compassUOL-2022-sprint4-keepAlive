@@ -1,4 +1,7 @@
 // ---- Home page controller
+// - Variables
+const buttonLogoutDOM = document.querySelector(".logout-button");
+
 // - Update current time
 setInterval(updateCurrentTime, 1000);
 
@@ -7,3 +10,6 @@ updateCurrentDay();
 
 // - Update Refresh counter
 setInterval(updateCounter, 1000);
+
+// - Logout button
+buttonLogoutDOM.addEventListener("click", callLogout);

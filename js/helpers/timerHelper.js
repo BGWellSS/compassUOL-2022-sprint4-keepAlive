@@ -34,7 +34,6 @@ function getCurrentDay() {
     "sexta-feira",
     "sábado",
   ];
-  console.dir(today.getDay());
   return `${weekDay[today.getDay()]}, ${today.getDate()} de ${
     months[today.getMonth()]
   } de ${today.getFullYear()}`;

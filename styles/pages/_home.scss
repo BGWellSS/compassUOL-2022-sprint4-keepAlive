@@ -134,4 +134,11 @@
       }
     }
   }
+  .logout-text {
+    background: transparent;
+    border: 0;
+    color: $text-color-dark;
+    outline: none;
+    cursor: pointer;
+  }
 }
