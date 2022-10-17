@@ -1,4 +1,4 @@
-// ---- Messages
+// ---- Messages View
 // - Invalid User/Password message
 function invalidAuth(message = "") {
   const invalidMessageDOM = document.querySelector(".message-text");

@@ -582,10 +582,16 @@ body {
   font-weight: 200;
 }
 .footer .refresh-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 80px;
   margin-right: 300px;
 }
 .footer .refresh-counter {
-  font-size: 4rem;
+  font-size: 4.5rem;
 }
 .footer .refresh-seconds {
   margin: 0;

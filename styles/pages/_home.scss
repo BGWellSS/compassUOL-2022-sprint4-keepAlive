@@ -95,10 +95,16 @@
     font-weight: 200;
   }
   .refresh-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 80px;
     margin-right: 300px;
   }
   .refresh-counter {
-    font-size: 4rem;
+    font-size: 4.5rem;
   }
   .refresh-seconds {
     margin: 0;
