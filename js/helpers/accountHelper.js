@@ -4,8 +4,9 @@ const userIconDOM = document.querySelector(".user-container");
 const passIconDOM = document.querySelector(".password-container");
 const loginUserDOM = document.querySelector("#userInput");
 const loginPassWDOM = document.querySelector("#pwInput");
-const userMocKAuth = "admin";
+const userMocKAuth = "admin@compass.com.br";
 const passMockAuth = "admin";
+const refreshDefault = 180;
 
 // - Verify Account
 function verifyAccount(event) {
@@ -16,6 +17,7 @@ function verifyAccount(event) {
     loginPassWDOM.value == passMockAuth
   ) {
     storageAuth();
+    setCounterStorage(refreshDefault);
     checkStorageAuth();
   } else {
     loginUserDOM.classList.add("invalid");

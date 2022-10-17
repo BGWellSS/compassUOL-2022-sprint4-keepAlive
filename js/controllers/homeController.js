@@ -2,6 +2,9 @@
 // - Variables
 const buttonLogoutDOM = document.querySelector(".logout-button");
 
+// - Login check
+homeCheckStorageAuth();
+
 // - Update current time
 setInterval(updateCurrentTime, 1000);
 

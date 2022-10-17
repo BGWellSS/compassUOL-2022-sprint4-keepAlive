@@ -3,7 +3,7 @@
 const buttonLoginDOM = document.querySelector(".submit-input");
 
 // - Check current login section
-checkStorageAuth();
+loginCheckStorageAuth();
 
 // - Login Button
 buttonLoginDOM.addEventListener("click", verifyAccount);

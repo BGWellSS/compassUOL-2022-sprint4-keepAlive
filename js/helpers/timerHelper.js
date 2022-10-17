@@ -1,7 +1,4 @@
 // ---- Timer functions Helper
-// - Variables
-let loginCounter = 600;
-
 // - Get current time
 function getCurrentTime() {
   const today = new Date();
@@ -41,9 +38,12 @@ function getCurrentDay() {
 
 // - Refresh counter
 function refreshCounter() {
+  let loginCounter = parseInt(getCounterStorage());
   loginCounter--;
-  if (loginCounter < 0) {
-    console.log("...Refresh");
+  setCounterStorage(loginCounter);
+  if (loginCounter <= 0) {
+    setStorageRefreshTag("ok");
+    window.location.replace("index.html");
   }
   return loginCounter;
 }
