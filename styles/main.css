@@ -466,4 +466,126 @@ body {
 }
 .login-page .image-container {
   margin: 35px;
+}
+
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  background: url("./../images/theme/Logo-Compasso2.svg") no-repeat;
+  background-size: 40%;
+  background-position: -10vw 25vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 40px;
+}
+.header .image-container {
+  margin: 0;
+}
+.header .timer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header .timer-hour {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+.header .timer-day {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.header .weather-container {
+  padding: 0 10px;
+}
+.header .weather-geoLocation {
+  font-size: 1.2rem;
+}
+.header .weather-local {
+  margin-top: 10px;
+  font-size: 4.2rem;
+  text-align: right;
+  font-weight: 700;
+}
+
+.main-content {
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 134px;
+}
+.main-content .mission-text {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 400;
+}
+.main-content .english-text {
+  color: #C12D18;
+  font-size: 5.4rem;
+  font-weight: 600;
+}
+.main-content .english-text:first-child {
+  font-size: 3.6rem;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+  color: #ffffff;
+}
+.footer .footer-text {
+  width: 27vw;
+  margin-right: 100px;
+  padding: 10px 35px;
+  border-right: 1px solid #ffffff;
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.footer .refresh-text {
+  width: 110px;
+  margin-right: 35px;
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.footer .refresh-container {
+  margin-right: 300px;
+}
+.footer .refresh-counter {
+  font-size: 4rem;
+}
+.footer .refresh-seconds {
+  margin: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.footer .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 130px;
+  font-size: 1.2rem;
+}
+.footer .continue-button {
+  background: #ffffff;
+}
+.footer .continue-button .continue-text {
+  text-align: center;
+  text-decoration: none;
+  color: #C13216;
+}
+.footer .continue-button .continue-text:visited {
+  color: #C13216;
 }/*# sourceMappingURL=main.css.map */

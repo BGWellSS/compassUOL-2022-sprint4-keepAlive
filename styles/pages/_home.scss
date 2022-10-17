@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+// ---- Home page styles
+.home-page {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100vh;
+  background: url("./../images/theme/Logo-Compasso2.svg") no-repeat;
+  background-size: 40%;
+  background-position: -10vw 25vh;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 25px 40px;
+
+  .image-container {
+    margin: 0;
+  }
+
+  .timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .timer-hour {
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 0.8;
+  }
+  .timer-day {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  .weather-container {
+    padding: 0 10px;
+  }
+  .weather-geoLocation {
+    font-size: 1.2rem;
+  }
+  .weather-local {
+    margin-top: 10px;
+    font-size: 4.2rem;
+    text-align: right;
+    font-weight: 700;
+  }
+}
+.main-content {
+  align-self: flex-end;
+  text-align: right;
+  margin-right: 134px;
+
+  .mission-text {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .english-text {
+    color: $en-mission-color;
+    font-size: 5.4rem;
+    font-weight: 600;
+
+    &:first-child {
+      font-size: 3.6rem;
+    }
+  }
+}
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
+  color: $white;
+
+  .footer-text {
+    width: 27vw;
+    margin-right: 100px;
+    padding: 10px 35px;
+    border-right: 1px solid $white;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+
+  .refresh-text {
+    width: 110px;
+    margin-right: 35px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  .refresh-container {
+    margin-right: 300px;
+  }
+  .refresh-counter {
+    font-size: 4rem;
+  }
+  .refresh-seconds {
+    margin: 0;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 130px;
+    font-size: 1.2rem;
+  }
+  .continue-button {
+    background: $white;
+
+    .continue-text {
+      text-align: center;
+      text-decoration: none;
+      color: $button-color-light;
+      
+      &:visited {
+        color: $button-color-light;
+      }
+    }
+  }
+}
