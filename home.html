@@ -10,11 +10,78 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./styles/main.css" />
   </head>
-  <body></body>
+  <body class="home-page">
+    <header class="header">
+      <figure class="image-container">
+        <img
+          src="./images/theme/Logo-Compasso.svg"
+          alt="Logo Compass.UOL"
+          class="logo-image"
+        />
+      </figure>
+      <div class="timer-container">
+        <div class="timer-hour">--:--</div>
+        <div class="timer-day"></div>
+      </div>
+      <div class="weather-container">
+        <div class="weather-geoLocation"></div>
+        <div class="weatherNumber-container">
+          <div class="weather-icon"></div>
+          <div class="weather-number"></div>
+        </div>
+      </div>
+    </header>
+    <main class="main-content">
+      <section class="compass-mission">
+        <p class="mission-text english-text">Our mission is</p>
+        <p class="mission-text portuguese-text">Nossa missão é</p>
+        <p class="mission-text english-text">to transform the world</p>
+        <p class="mission-text portuguese-text">transformar o mundo</p>
+        <p class="mission-text english-text">building digital experiences</p>
+        <p class="mission-text portuguese-text">
+          construindo experiências digitais
+        </p>
+        <p class="mission-text english-text">that enable our client’s growth</p>
+        <p class="mission-text portuguese-text">
+          que permitam o crescimento dos nossos clientes
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer-text">
+        Essa janela do navegador é usada para manter sua sessão de autenticação
+        ativa. Deixe-a aberta em segundo plano e abra uma nova janela para
+        continuar a navegar.
+      </p>
+      <p class="refresh-text">Application refresh in</p>
+      <div class="refresh-container">
+        <span class="refresh-counter">---</span>
+        <p class="refresh-seconds">seconds</p>
+      </div>
+      <div class="button continue-button">
+        <a
+          href="https://noticias.uol.com.br/"
+          target="_blank"
+          class="continue-text"
+          >Continuar Navegando</a
+        >
+      </div>
+      <div class="button logout-button">
+        <button type="button" class="logout-text">Logout</button>
+      </div>
+    </footer>
+    <script src="./js/helpers/storageHelper.js"></script>
+    <script src="./js/helpers/timerHelper.js"></script>
+    <script src="./js/helpers/logoutHelper.js"></script>
+    <script src="./js/model/weather.js"></script>
+    <script src="./js/views/timerView.js"></script>
+    <script src="./js/views/weatherView.js"></script>
+    <script src="./js/controllers/homeController.js"></script>
+  </body>
 </html>

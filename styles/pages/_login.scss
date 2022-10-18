@@ -1,0 +1,52 @@
+@charset "UTF-8";
+
+// ---- Login page styles
+.login-page {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: linear-gradient(
+    180deg,
+    $bg-login-color1 0%,
+    $bg-login-color2 100%
+  );
+  color: $text-color-dark;
+
+  .side-a,
+  .side-b {
+    width: 50%;
+  }
+
+  .login-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+    width: 40%;
+  }
+  .login-greeting {
+    margin: 17px 0;
+  }
+  .login-text {
+    margin-right: 15%;
+  }
+  .login-title {
+    margin-top: 135px;
+    margin-bottom: 35px;
+  }
+
+  .compass-content {
+    background: url("./../images/theme/compasso_notebook.jpg") no-repeat;
+    background-size: cover;
+  }
+  .compass-header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .image-container {
+    margin: 35px;
+  }
+}
