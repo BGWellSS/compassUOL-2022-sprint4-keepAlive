@@ -6,7 +6,7 @@ const loginUserDOM = document.querySelector("#userInput");
 const loginPassWDOM = document.querySelector("#pwInput");
 const userMocKAuth = "admin@compass.com.br";
 const passMockAuth = "admin";
-const refreshDefault = 180;
+const refreshDefault = 600;
 
 // - Verify Account
 function verifyAccount(event) {
