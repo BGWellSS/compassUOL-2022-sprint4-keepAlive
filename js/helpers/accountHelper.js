@@ -29,8 +29,6 @@ function verifyAccount(event) {
   } else {
     loginUserDOM.classList.add("invalid");
     loginPassWDOM.classList.add("invalid");
-    loginUserDOM.value = "";
-    loginPassWDOM.value = "";
     invalidAuth("Ops, usuário ou senha inválidos. Tente novamente!");
   }
 }

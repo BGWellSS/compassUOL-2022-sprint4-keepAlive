@@ -1,7 +1,7 @@
 // ---- Logout functions Helper
 // - Call logout
 function callLogout() {
-  const pronptMessage = "Deseja permanecer logado?"
+  const pronptMessage = "Deseja permanecer conectado?"
   if (confirm(pronptMessage) == true) {
     setCounterStorage(refreshDefault);
   } else {
