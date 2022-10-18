@@ -48,5 +48,28 @@
   }
   .image-container {
     margin: 35px;
+    text-align: center;
+  }
+}
+
+// ---- Media queries breakpoints
+// - HD desktops
+@media (max-width: 1440px) {
+  .login-page {
+    .container {
+      width: 50%;
+    }
+    .login-title {
+      margin-top: 50px;
+    }
+    .message-container {
+      margin-top: 20px;
+    }
+    .submit-input {
+      margin-top: 20px;
+    }
+    .logo-image {
+      width: 80%;
+    }
   }
 }

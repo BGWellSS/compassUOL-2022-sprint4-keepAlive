@@ -9,115 +9,146 @@
   background: url("./../images/theme/Logo-Compasso2.svg") no-repeat;
   background-size: 40%;
   background-position: -10vw 25vh;
-}
 
-// - Header
-.header {
-  display: flex;
-  justify-content: space-between;
-  box-sizing: border-box;
-  width: 100%;
-  padding: 25px 40px;
-
-  .image-container {
-    margin: 0;
-  }
-
-  .timer-container {
+  // - Header
+  .header {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .timer-day {
-    margin: 0;
-  }
-
-  .weather-container {
-    padding: 0 10px;
-  }
-  .weatherNumber-container {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-  }
-  .weather-icon {
-    & img {
-      width: 35px;
-      margin-right: 10px;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 25px 40px;
+  
+    .image-container {
+      margin: 0;
     }
-  }
-}
-
-// - Main content
-.main-content {
-  align-self: flex-end;
-  text-align: right;
-  margin-right: 134px;
-
-  .mission-text {
-    margin: 0;
-  }
-  .english-text {
-    color: $en-mission-color;
-  }
-}
-
-// - Footer
-.footer {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  background: linear-gradient(90.16deg, $bg-login-color1 0%, $bg-login-color2 100%);
-  color: $white;
-
-  .footer-text {
-    width: 27vw;
-    margin-right: 100px;
-    padding: 10px 35px;
-    border-right: 1px solid $white;
-  }
-
-  .refresh-text {
-    width: 110px;
-    margin-right: 35px;
-  }
-  .refresh-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 80px;
-    margin-right: 300px;
-  }
-  .refresh-seconds {
-    margin: 0;
-  }
-
-  .button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100px;
-    width: 130px;
-  }
-  .continue-button {
-    background: $white;
-
-    .continue-text {
-      text-decoration: none;
-      color: $button-color-light;
-
-      &:visited {
-        color: $button-color-light;
+  
+    .timer-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .timer-day {
+      margin: 0;
+    }
+  
+    .weather-container {
+      padding: 0 10px;
+    }
+    .weatherNumber-container {
+      display: flex;
+      align-items: center;
+      margin-top: 10px;
+    }
+    .weather-icon {
+      & img {
+        width: 35px;
+        margin-right: 10px;
       }
     }
   }
-  .logout-text {
-    background: transparent;
-    border: 0;
-    color: $text-color-dark;
-    outline: none;
-    cursor: pointer;
+  
+  // - Main content
+  .main-content {
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 134px;
+  
+    .mission-text {
+      margin: 0;
+    }
+    .english-text {
+      color: $en-mission-color;
+    }
+  }
+  
+  // - Footer
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background: linear-gradient(90.16deg, $bg-login-color1 0%, $bg-login-color2 100%);
+    color: $white;
+  
+    .footer-text {
+      width: 27vw;
+      margin-right: 100px;
+      padding: 10px 35px;
+      border-right: 1px solid $white;
+    }
+  
+    .refresh-text {
+      width: 110px;
+      margin-right: 35px;
+    }
+    .refresh-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 80px;
+      margin-right: 300px;
+    }
+    .refresh-seconds {
+      margin: 0;
+    }
+  
+    .button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      width: 130px;
+    }
+    .continue-button {
+      background: $white;
+  
+      .continue-text {
+        text-decoration: none;
+        color: $button-color-light;
+  
+        &:visited {
+          color: $button-color-light;
+        }
+      }
+    }
+    .logout-text {
+      background: transparent;
+      border: 0;
+      color: $text-color-dark;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+// ---- Media queries breakpoints
+// - HD desktops
+@media (max-width: 1440px) {
+  .home-page {
+    // - Main content
+    .main-content {
+      margin-right: 75px;
+    }
+
+    // - footer
+    .footer {
+      .footer-text {
+        margin-right: 80px;
+      }
+      .refresh-text {
+        width: 100px;
+        margin-right: 20px;
+      }
+      .refresh-container {
+        height: 80px;
+        width: 100px;
+        margin-right: 170px;
+      }
+      .button {
+        height: 80px;
+        width: 100px;
+      }
+    }
   }
 }
