@@ -30,10 +30,10 @@ Project for the 4th sprint of the Compass.UOL scholarship program. The project c
 
 This section should list any major frameworks/libraries used to build your project.
 
-* [![Html 5][Html5]][Html5-url]
-* [![Sass][Sass]][Sass-url]
-* [![Css 3][Css3]][Css3-url]
-* [![Javascript][Javascript]][Javascript-url]
+* ![Html5]
+* ![Sass]
+* ![Css3]
+* ![Javascript]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
