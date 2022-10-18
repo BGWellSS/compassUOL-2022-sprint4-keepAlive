@@ -421,6 +421,59 @@ body {
   text-align: center;
 }
 
+@media (max-width: 1440px) {
+  .login-greeting {
+    font-size: 5rem;
+    line-height: 6.6rem;
+  }
+  .login-text {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  .login-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+  .login-form {
+    font-size: 1.3rem;
+  }
+  .header .timer-hour {
+    font-size: 9.5rem;
+  }
+  .header .timer-day {
+    font-size: 1.2rem;
+  }
+  .header .weather-geoLocation {
+    font-size: 1.2rem;
+  }
+  .header .weather-number {
+    font-size: 3.2rem;
+  }
+  .main-content .mission-text {
+    font-size: 1.6rem;
+  }
+  .main-content .english-text {
+    font-size: 4rem;
+  }
+  .main-content .english-text:first-child {
+    font-size: 3rem;
+  }
+  .footer .footer-text {
+    font-size: 1rem;
+  }
+  .footer .refresh-text {
+    font-size: 1.1rem;
+  }
+  .footer .refresh-counter {
+    font-size: 3.5rem;
+  }
+  .footer .refresh-seconds {
+    font-size: 1.1rem;
+  }
+  .footer .button {
+    font-size: 1.1rem;
+  }
+}
 .login-form {
   display: flex;
   flex-direction: column;
@@ -544,8 +597,26 @@ body {
 }
 .login-page .image-container {
   margin: 35px;
+  text-align: center;
 }
 
+@media (max-width: 1440px) {
+  .login-page .container {
+    width: 50%;
+  }
+  .login-page .login-title {
+    margin-top: 50px;
+  }
+  .login-page .message-container {
+    margin-top: 20px;
+  }
+  .login-page .submit-input {
+    margin-top: 20px;
+  }
+  .login-page .logo-image {
+    width: 80%;
+  }
+}
 .home-page {
   display: flex;
   justify-content: space-between;
@@ -555,68 +626,65 @@ body {
   background-size: 40%;
   background-position: -10vw 25vh;
 }
-
-.header {
+.home-page .header {
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
   width: 100%;
   padding: 25px 40px;
 }
-.header .image-container {
+.home-page .header .image-container {
   margin: 0;
 }
-.header .timer-container {
+.home-page .header .timer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.header .timer-day {
+.home-page .header .timer-day {
   margin: 0;
 }
-.header .weather-container {
+.home-page .header .weather-container {
   padding: 0 10px;
 }
-.header .weatherNumber-container {
+.home-page .header .weatherNumber-container {
   display: flex;
   align-items: center;
   margin-top: 10px;
 }
-.header .weather-icon img {
+.home-page .header .weather-icon img {
   width: 35px;
   margin-right: 10px;
 }
-
-.main-content {
+.home-page .main-content {
   align-self: flex-end;
   text-align: right;
   margin-right: 134px;
 }
-.main-content .mission-text {
+.home-page .main-content .mission-text {
   margin: 0;
 }
-.main-content .english-text {
+.home-page .main-content .english-text {
   color: #C12D18;
 }
-
-.footer {
+.home-page .footer {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   background: linear-gradient(90.16deg, #33383d 0%, #1c1d20 100%);
   color: #ffffff;
 }
-.footer .footer-text {
+.home-page .footer .footer-text {
   width: 27vw;
   margin-right: 100px;
   padding: 10px 35px;
   border-right: 1px solid #ffffff;
 }
-.footer .refresh-text {
+.home-page .footer .refresh-text {
   width: 110px;
   margin-right: 35px;
 }
-.footer .refresh-container {
+.home-page .footer .refresh-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -625,30 +693,52 @@ body {
   width: 80px;
   margin-right: 300px;
 }
-.footer .refresh-seconds {
+.home-page .footer .refresh-seconds {
   margin: 0;
 }
-.footer .button {
+.home-page .footer .button {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100px;
   width: 130px;
 }
-.footer .continue-button {
+.home-page .footer .continue-button {
   background: #ffffff;
 }
-.footer .continue-button .continue-text {
+.home-page .footer .continue-button .continue-text {
   text-decoration: none;
   color: #C13216;
 }
-.footer .continue-button .continue-text:visited {
+.home-page .footer .continue-button .continue-text:visited {
   color: #C13216;
 }
-.footer .logout-text {
+.home-page .footer .logout-text {
   background: transparent;
   border: 0;
   color: #e0e0e0;
   outline: none;
   cursor: pointer;
+}
+
+@media (max-width: 1440px) {
+  .home-page .main-content {
+    margin-right: 75px;
+  }
+  .home-page .footer .footer-text {
+    margin-right: 80px;
+  }
+  .home-page .footer .refresh-text {
+    width: 100px;
+    margin-right: 20px;
+  }
+  .home-page .footer .refresh-container {
+    height: 80px;
+    width: 100px;
+    margin-right: 170px;
+  }
+  .home-page .footer .button {
+    height: 80px;
+    width: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */

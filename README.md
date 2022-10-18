@@ -16,6 +16,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li><a href="#about-the-project">About The Project</a></li>
+    <li><a href="#github-pages">Github Pages</a></li>
     <li><a href="#built-with">Built With</a></li>
   </ol>
 </details>
@@ -23,6 +24,13 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 Project for the 4th sprint of the Compass.UOL scholarship program. The project consists of a modern login screen and a dashboard with geolocation and user session timer functions.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## Github Pages
+
+The project can be viewed online through the link:
+[Github.Pages - Keep Alive](https://github.com/BGWellSS/compass-front-sprint4-keepAlive/deployments/activity_log?environment=github-pages)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
