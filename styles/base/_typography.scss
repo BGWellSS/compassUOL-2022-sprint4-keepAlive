@@ -25,3 +25,75 @@ body {
   line-height: 3.8rem;
   font-weight: 200;
 }
+
+// ---- Home page
+// - Header
+.header {
+  .timer-hour {
+    font-size: 12rem;
+    font-weight: 700;
+    line-height: 0.8;
+  }
+  .timer-day {
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+
+  // - Weather
+  .weather-geoLocation {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  .weather-number {
+    font-size: 4.2rem;
+    text-align: right;
+    font-weight: 700;
+  }
+}
+
+// - Main content
+.main-content {
+  .mission-text {
+    font-size: 2rem;
+    font-weight: 400;
+  }
+  .english-text {
+    font-size: 5.4rem;
+    font-weight: 600;
+
+    &:first-child {
+      font-size: 3.6rem;
+    }
+  }
+}
+
+// - Footer
+.footer {
+  .footer-text {
+    text-align: right;
+    font-size: 1rem;
+    font-weight: 200;
+  }
+  .refresh-text {
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+  .refresh-counter {
+    font-size: 4.5rem;
+  }
+  .refresh-seconds {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 200;
+  }
+
+  .button {
+    font-size: 1.2rem;
+  }
+  .continue-button {
+    .continue-text {
+      text-align: center;
+    }
+  }
+}

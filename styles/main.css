@@ -365,6 +365,62 @@ body {
   font-weight: 200;
 }
 
+.header .timer-hour {
+  font-size: 12rem;
+  font-weight: 700;
+  line-height: 0.8;
+}
+.header .timer-day {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.header .weather-geoLocation {
+  font-size: 1.2rem;
+  text-align: center;
+}
+.header .weather-number {
+  font-size: 4.2rem;
+  text-align: right;
+  font-weight: 700;
+}
+
+.main-content .mission-text {
+  font-size: 2rem;
+  font-weight: 400;
+}
+.main-content .english-text {
+  font-size: 5.4rem;
+  font-weight: 600;
+}
+.main-content .english-text:first-child {
+  font-size: 3.6rem;
+}
+
+.footer .footer-text {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 200;
+}
+.footer .refresh-text {
+  text-align: right;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.footer .refresh-counter {
+  font-size: 4.5rem;
+}
+.footer .refresh-seconds {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+.footer .button {
+  font-size: 1.2rem;
+}
+.footer .continue-button .continue-text {
+  text-align: center;
+}
+
 .login-form {
   display: flex;
   flex-direction: column;
@@ -515,27 +571,20 @@ body {
   flex-direction: column;
   align-items: center;
 }
-.header .timer-hour {
-  font-size: 12rem;
-  font-weight: 700;
-  line-height: 0.8;
-}
 .header .timer-day {
   margin: 0;
-  font-size: 1.2rem;
-  font-weight: 400;
 }
 .header .weather-container {
   padding: 0 10px;
 }
-.header .weather-geoLocation {
-  font-size: 1.2rem;
-}
-.header .weather-local {
+.header .weatherNumber-container {
+  display: flex;
+  align-items: center;
   margin-top: 10px;
-  font-size: 4.2rem;
-  text-align: right;
-  font-weight: 700;
+}
+.header .weather-icon img {
+  width: 35px;
+  margin-right: 10px;
 }
 
 .main-content {
@@ -545,16 +594,9 @@ body {
 }
 .main-content .mission-text {
   margin: 0;
-  font-size: 2rem;
-  font-weight: 400;
 }
 .main-content .english-text {
   color: #C12D18;
-  font-size: 5.4rem;
-  font-weight: 600;
-}
-.main-content .english-text:first-child {
-  font-size: 3.6rem;
 }
 
 .footer {
@@ -569,16 +611,10 @@ body {
   margin-right: 100px;
   padding: 10px 35px;
   border-right: 1px solid #ffffff;
-  text-align: right;
-  font-size: 1rem;
-  font-weight: 200;
 }
 .footer .refresh-text {
   width: 110px;
   margin-right: 35px;
-  text-align: right;
-  font-size: 1.2rem;
-  font-weight: 200;
 }
 .footer .refresh-container {
   display: flex;
@@ -589,14 +625,8 @@ body {
   width: 80px;
   margin-right: 300px;
 }
-.footer .refresh-counter {
-  font-size: 4.5rem;
-}
 .footer .refresh-seconds {
   margin: 0;
-  text-align: center;
-  font-size: 1.2rem;
-  font-weight: 200;
 }
 .footer .button {
   display: flex;
@@ -604,13 +634,11 @@ body {
   align-items: center;
   height: 100px;
   width: 130px;
-  font-size: 1.2rem;
 }
 .footer .continue-button {
   background: #ffffff;
 }
 .footer .continue-button .continue-text {
-  text-align: center;
   text-decoration: none;
   color: #C13216;
 }
