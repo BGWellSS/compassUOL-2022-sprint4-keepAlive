@@ -19,9 +19,18 @@ function verifyAccount(event) {
     storageAuth();
     setCounterStorage(refreshDefault);
     checkStorageAuth();
+  } else if (
+      loginUserDOM.value == "" &&
+      loginPassWDOM.value == ""
+    ) {
+      loginUserDOM.classList.remove("invalid");
+      loginPassWDOM.classList.remove("invalid");
+      clearInvalidAuth();
   } else {
     loginUserDOM.classList.add("invalid");
     loginPassWDOM.classList.add("invalid");
+    loginUserDOM.value = "";
+    loginPassWDOM.value = "";
     invalidAuth("Ops, usuário ou senha inválidos. Tente novamente!");
   }
 }
