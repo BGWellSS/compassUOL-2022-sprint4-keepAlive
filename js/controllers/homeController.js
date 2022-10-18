@@ -11,6 +11,9 @@ setInterval(updateCurrentTime, 1000);
 // Update current day
 updateCurrentDay();
 
+// Update weather
+weatherLocation();
+
 // - Update Refresh counter
 setInterval(updateCounter, 1000);
 

@@ -26,8 +26,11 @@
         <div class="timer-day"></div>
       </div>
       <div class="weather-container">
-        <div class="weather-geoLocation">Passo Fundo - RS</div>
-        <div class="weather-local">22º</div>
+        <div class="weather-geoLocation"></div>
+        <div class="weatherNumber-container">
+          <div class="weather-icon"></div>
+          <div class="weather-number"></div>
+        </div>
       </div>
     </header>
     <main class="main-content">
@@ -63,7 +66,9 @@
     <script src="./js/helpers/storageHelper.js"></script>
     <script src="./js/helpers/timerHelper.js"></script>
     <script src="./js/helpers/logoutHelper.js"></script>
+    <script src="./js/model/weather.js"></script>
     <script src="./js/views/timerView.js"></script>
+    <script src="./js/views/weatherView.js"></script>
     <script src="./js/controllers/homeController.js"></script>
   </body>
 </html>
