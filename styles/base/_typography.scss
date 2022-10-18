@@ -97,3 +97,80 @@ body {
     }
   }
 }
+
+// ---- Media queries breakpoints
+// - HD desktops
+@media (max-width: 1440px) {
+  // ---- Login page
+  // - Presentation
+  .login-greeting {
+    font-size: 5rem;
+    line-height: 6.6rem;
+  }
+  .login-text {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+  
+  // - Login form
+  .login-title {
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+  .login-form {
+    font-size: 1.3rem;
+  }
+
+  // ---- Home page
+  // - Header
+  .header {
+    .timer-hour {
+      font-size: 9.5rem;
+    }
+    .timer-day {
+      font-size: 1.2rem;
+    }
+  
+    // - Weather
+    .weather-geoLocation {
+      font-size: 1.2rem;
+    }
+    .weather-number {
+      font-size: 3.2rem;
+    }
+  }
+  
+  // - Main content
+  .main-content {
+    .mission-text {
+      font-size: 1.6rem;
+    }
+    .english-text {
+      font-size: 4rem;
+
+      &:first-child {
+        font-size: 3rem;
+      }
+    }
+  }
+
+  // - Footer
+  .footer {
+    .footer-text {
+      font-size: 1rem;
+    }
+    .refresh-text {
+      font-size: 1.1rem;
+    }
+    .refresh-counter {
+      font-size: 3.5rem;
+    }
+    .refresh-seconds {
+      font-size: 1.1rem;
+    }
+
+    .button {
+      font-size: 1.1rem;
+    }
+  }
+}
